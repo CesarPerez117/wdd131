@@ -1,0 +1,131 @@
+
+/*Body*/
+body {
+    font-family: "Sansita", sans-serif;
+    background-color: #e0e0e0;
+    color: #f0f0f0;
+}
+.profile-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.drflag {
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;  
+}
+/*Header*/
+header {
+    background-color: #014421;
+    color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/*Navi*/
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: #013220;
+    border-radius: 8px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+}
+nav ul li {
+    margin: 0 1rem;
+
+}
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: bold
+}
+nav a:hover {
+    text-decoration: overline;
+    color: #85d41d;
+}
+/*Main*/
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 2rem auto;
+    background-color: #d9d9d9;
+    color: #333;
+}
+h2 {
+    background-color: #013220;
+    color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 8px;
+}
+h3 {
+    background-color: #013220;
+    color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 8px;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about p {
+    padding: 3rem;
+}
+.countryInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.countryInfo p {
+    padding: 3rem;
+}
+.card {
+    background-color: whitesmoke;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    text-decoration: none;
+    border-radius: 8px;
+    border-color: #013220;
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 8rem;
+    padding-top: 5rem;
+    
+}
+.card ul li {
+    margin-bottom: 0.5rem;
+    padding-bottom: 3rem;
+}
+.card ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+.card ul li a:hover {
+    color: #85d41d;
+}
+
+/*Footer*/
+footer {
+    grid-area: footer;
+    background-color: #014421;
+    color: #f0f0f0;
+    text-align: center;
+    border-radius: 8px;
+    padding: 1rem;
+}

@@ -1,0 +1,8 @@
+Variables - Javascript
+
+What variables are and why they are so important.
+Declaring variables with let, initializing them with values, and reassigning with new values.
+Creating constants with const.
+The difference between variables and constants, and when you would use each one.
+Variable naming best practices.
+The different types of value that can be stored in variables — strings, numbers, booleans, arrays, and objects.
