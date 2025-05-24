@@ -1,0 +1,27 @@
+
+@media screen and (min-width: 480px){
+    main {
+        max-width: 800px;
+        align-content: center;
+    }
+    h1 {
+        color: #f0f0f0;
+    }
+    .navigation {
+        flex-direction: row;
+        background-color: #57831e;
+    }
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+    #menu {
+        display: none;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        justify-content: center;
+    }
+} 
