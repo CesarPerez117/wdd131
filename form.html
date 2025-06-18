@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Product Review</title>
+    <meta name="description" content="WDD-131 Product Review Form">
+    <meta name="author" content="Cesar Perez">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="form-thanks.html" class="wf1">
+            <fieldset>
+                <label>Product Name*
+                    <select name="product" id="product" required>
+                        <option selected disabled="disabled" value="">choose a product...</option>
+                    </select>
+                </label>
+
+                <label class="rating-label">Overall Rating*</label>
+                <div class="rating-group">
+                    <label><input type="radio" name="star" value="1star" required>⭐</label>
+                    <label><input type="radio" name="star" value="2star" required>⭐⭐</label>
+                    <label><input type="radio" name="star" value="3star" required>⭐⭐⭐</label>
+                    <label><input type="radio" name="star" value="4star" required>⭐⭐⭐⭐</label>
+                    <label><input type="radio" name="star" value="5star" required>⭐⭐⭐⭐⭐</label>
+                </div>
+
+
+                    <label>Date of Installation*
+                        <input type="date" name="installation" required>
+                    </label>
+
+                    <div class="feature-label">
+                        Which features did you find most useful in the product?<br>(Check all that apply)
+                    </div>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="durability" value="yes">Durability</label>
+                        <label><input type="checkbox" name="ease" value="yes">Ease of use</label>
+                        <label><input type="checkbox" name="performance" value="yes">Performance</label>
+                        <label><input type="checkbox" name="design" value="yes">Design</label>
+                    </div>
+
+                    <label>Written Review
+                        <span class="optional-note">(Optional)</span>
+                    </label>
+                    <textarea name="review" placeholder="Write here..." rows="4" cols="50"></textarea>
+                    
+
+                    <label>Your Name
+                        <span class="optional-note">(Optional)</span>
+                        <input type="text" name="username" id="user">
+                    </label>
+
+                    <label><input type="submit" value="Post Review"></label>
+            </fieldset>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Cesar Perez | Dominican Republic</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
