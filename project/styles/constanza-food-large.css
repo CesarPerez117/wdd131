@@ -5,7 +5,7 @@
   --blue: #A2D2FF;
   --beige: #F8EDEB;
   --amber: #FFC300;
-  --white: #ddd;
+  --black: #000000;
 }
 
 body {
@@ -24,6 +24,7 @@ header {
 }
 nav a {
     text-decoration: none;
+    color: var(--black);
 }
 .nav-container {
   display: flex;
@@ -211,7 +212,7 @@ footer {
   border-top: 3px solid var(--green);
   padding: 2rem 0 1.5rem;
   text-align: center;
-  color: var(--white);
+  color: var(--black);
   font-weight: bold;
   font-family: 'Playfair Display', serif;
   box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
