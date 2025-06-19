@@ -64,7 +64,7 @@ const foodPlaces = [
 document.getElementById("food-form").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  // I was explained by the IA ChatGPT that if I run the recall here, I will be able to make it work.
+  // if I run the recall here, I will be able to make it work.
   recallPreference();
 
   const style = document.querySelector("input[name='style']:checked")?.value; // this validates better if the user selected an option or not.
@@ -74,7 +74,7 @@ document.getElementById("food-form").addEventListener("submit", function (e) {
 
   const resultBox = document.getElementById("result");
 
-  if (!style || !protein || !prep) { // this was provided by IA ChatGPT, it requires spaces in the form were is required to fill.
+  if (!style || !protein || !prep) { // this requires spaces in the form were is required to fill.
     resultBox.innerHTML = `<p>Please fill out all required fields.</p>`;
     return;
   }
