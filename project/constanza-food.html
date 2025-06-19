@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Places | Constanza</title>
+  <link rel="stylesheet" href="styles/constanza-food-large.css" />
+  <link rel="stylesheet" href="styles/constanza-food-small.css" />
+  <script src="scripts/constanza-main-scripts.js" defer></script>
+  <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="nav-container">
+      <ul class="nav-links">
+        <li href="#">Home</li>
+        <li href="#">Hiking Guides</li>
+        <li href="#">Food Places</li>
+      </ul>
+      <img src="images/constanza-logo.webp" alt="Constanza Logo" class="logo"/>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/constanza-food.webp" alt="Constanza Food Scene" loading="lazy" />
+      <div class="hero-text">
+        <h1>Find the Best Food in Constanza</h1>
+        <p>Local flavors, sizzling street dishes, and home-style comfort await.</p>
+      </div>
+    </section>
+
+    <section class="form-section">
+  <h2>What type of food do you prefer?</h2>
+  <form id="food-form">
+    <!-- Style -->
+    <fieldset>
+      <legend>Select the food style:</legend>
+      <label><input type="radio" name="style" value="local" required /> Local</label>
+      <label><input type="radio" name="style" value="street" /> Street Food</label>
+    </fieldset>
+
+    <!-- Protein -->
+    <label for="protein">Choose your preferred protein:</label>
+    <select id="protein" name="protein" required>
+      <option value="">--Select Protein--</option>
+      <option value="chicken">Chicken</option>
+      <option value="pork">Pork</option>
+      <option value="beef">Beef</option>
+      <option value="none">No Meat / Vegetarian</option>
+    </select>
+
+    <!-- Preparation -->
+    <fieldset>
+      <legend>How do you want it prepared?</legend>
+      <label><input type="radio" name="prep" value="cooked" required /> Cooked</label>
+      <label><input type="radio" name="prep" value="fried" /> Fried</label>
+      <label><input type="radio" name="prep" value="grilled" /> Grilled</label>
+    </fieldset>
+
+    <!-- Accompaniments -->
+    <fieldset>
+      <legend>Choose an accompaniment:</legend>
+      <label><input type="checkbox" name="sides" value="rice" /> Rice</label>
+      <label><input type="checkbox" name="sides" value="plantains" /> Plantains</label>
+      <label><input type="checkbox" name="sides" value="salad" /> Salad</label>
+      <label><input type="checkbox" name="sides" value="fries" /> Fries</label>
+    </fieldset>
+
+    <button type="submit">Find the best place to eat!</button>
+  </form>
+
+  <div id="result" class="result-box"></div>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <img src="images/facebook.svg" alt="Facebook" />
+      <img src="images/instagram.svg" alt="Instagram" />
+      <img src="images/x.svg" alt="X (formerly Twitter)" />
+    </div>
+    <p>&copy;<span id="currentYear"></span> | Cesar Perez | Dominican Republic</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
