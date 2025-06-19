@@ -5,6 +5,7 @@
   --blue: #A2D2FF;
   --beige: #F8EDEB;
   --amber: #FFC300;
+  --white: #ddd;
 }
 
 body {
@@ -210,7 +211,8 @@ footer {
   border-top: 3px solid var(--green);
   padding: 2rem 0 1.5rem;
   text-align: center;
-  color: var(--green);
+  color: var(--white);
+  font-weight: bold;
   font-family: 'Playfair Display', serif;
   box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
 }
