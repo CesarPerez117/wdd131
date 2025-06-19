@@ -1,6 +1,3 @@
-function recallPreference() {
-  console.log("Food preference recall function.");
-}
 
 const foodPlaces = [
   {
@@ -64,8 +61,6 @@ const foodPlaces = [
 document.getElementById("food-form").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  // if I run the recall here, I will be able to make it work.
-  recallPreference();
 
   const style = document.querySelector("input[name='style']:checked")?.value; // this validates better if the user selected an option or not.
   const protein = document.getElementById("protein").value;
