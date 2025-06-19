@@ -22,6 +22,9 @@ header {
   justify-content: center;
 }
 
+nav a {
+    text-decoration: none;
+}
 .nav-container {
   display: flex;
   justify-content: space-between;
